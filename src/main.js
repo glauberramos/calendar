@@ -1,18 +1,18 @@
 var data =  [ 
   {
-    date: '21/08/2015',
+    date: '08/21/2015',
     name: 'braziljs'
   },
   {
-    date: '22/08/2015',
+    date: '08/22/2015',
     name: 'braziljs'
   },
   {
-    date: '22/08/2015',
+    date: '08/22/2015',
     name: 'formatura mano'
   },
   {
-    date: '12/09/2015',
+    date: '09/12/2015',
     name: 'UX conf br'
   },
   {
@@ -20,20 +20,35 @@ var data =  [
     name: 'Pearl Jam'
   },
   {
-    date: '04/12/2015',
+    date: '12/04/2015',
     name: 'Casamento diego betina'
   },
   {
-    date: '10/12/2015',
+    date: '12/10/2015',
     name: 'Recital paiva'
   }
 ];
+
+function convertDate(rawDate) {
+  var monthNames = [
+    "January", "February", "March",
+    "April", "May", "June", "July",
+    "August", "September", "October",
+    "November", "December"
+  ];
+  var date = new Date(rawDate);
+  var day = date.getDate();
+  var monthIndex = date.getMonth();
+  var year = date.getFullYear();
+
+  return day + ' ' + monthNames[monthIndex] + ' ' + year; 
+}
 
 var List = React.createClass({
     render: function() {
         return (<div>
         { this.props.data.map(function(item) {
-                return <li>{item.date} - {item.name}</li>
+                return <li>{convertDate(item.date)} - {item.name}</li>
             })
         }
         </div>);

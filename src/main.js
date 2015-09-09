@@ -41,7 +41,7 @@ function convertDate(rawDate) {
   var monthIndex = date.getMonth();
   var year = date.getFullYear();
 
-  return day + ' ' + monthNames[monthIndex] + ' ' + year; 
+  return day + ' ' + monthNames[monthIndex]; 
 }
 
 function isOlderThanToday(compareDate) {
@@ -56,7 +56,7 @@ var List = React.createClass({
         return (<div>
         { this.props.data.map(function(item) {
                 var className = isOlderThanToday(item.date) ? 'old' : '';
-                return <li className={className}>{convertDate(item.date)} - {item.name}</li>
+                return <li className={className}><span className='date'>{convertDate(item.date)}</span> {item.name}</li>
             })
         }
         </div>);

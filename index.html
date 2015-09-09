@@ -1,27 +1,16 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<article>
-			<ul>
-				<li><number>14 agosto</number> - vorlat</li>
-				<li><number>16 agosto</number> - brechó da lou</li>
-				<li><number>20 agosto</number> - selton, dingo bells, maglore</li>
-				<li><number>21 agosto</number> - vera loca</li>
-				<li><number>21 agosto</number> - braziljs</li>
-				<li><number>22 agosto</number> - braziljs</li>
-				<li><number>12 setembro</number> - UX conf br</li>
-				<li><number>11 novembro</number> - Pearl Jam</li>
-			</ul>
-		</article>
-	</body>
-	<script>
-		var dateObj = new Date();
-		var month = dateObj.getUTCMonth() + 1;
-		var day = dateObj.getUTCDate();
-
-		newdate = day + ' ' + month;
-	</script>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple calendar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="build/react.js"></script>
+    <!-- No need for JSXTransformer! -->
+  </head>
+  <body>
+    <article>
+		<ul id="calendar-list"></ul>
+	</article>
+    <script src="build/main.js"></script>
+  </body>
 </html>

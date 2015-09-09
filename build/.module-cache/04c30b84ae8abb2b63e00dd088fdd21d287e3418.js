@@ -1,0 +1,40 @@
+var List = React.createClass({displayName: "List",
+  render: function() {
+    return (React.createElement("li", null, " ",  this.props.data.map(function(item) {
+      return React.createElement("div", null, item.date)
+    })));
+  }
+});
+
+var data =  [ 
+  {
+    date: '21 agosto',
+    name: 'braziljs'
+  },
+  {
+    date: '22 agosto',
+    name: 'braziljs'
+  },
+  {
+    date: '22 agosto',
+    name: 'formatura mano'
+  },
+  {
+    date: '12 setembro',
+    name: 'UX conf br'
+  },
+  {
+    date: '11 novembro',
+    name: 'Pearl Jam'
+  },
+  {
+    date: '4 dezembro',
+    name: 'Casamento diego betina'
+  },
+  {
+    date: '10 dezembro',
+    name: 'Recital paiva'
+  }
+];
+
+React.render(React.createElement(List, {data:  data }), document.getElementById('calendar-list'));

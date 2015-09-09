@@ -1,30 +1,30 @@
 var data =  [ 
   {
-    date: '21 agosto',
+    date: '21/08/2015',
     name: 'braziljs'
   },
   {
-    date: '22 agosto',
+    date: '22/08/2015',
     name: 'braziljs'
   },
   {
-    date: '22 agosto',
+    date: '22/08/2015',
     name: 'formatura mano'
   },
   {
-    date: '12 setembro',
+    date: '12/09/2015',
     name: 'UX conf br'
   },
   {
-    date: '11 novembro',
+    date: '11/11/2015',
     name: 'Pearl Jam'
   },
   {
-    date: '4 dezembro',
+    date: '04/12/2015',
     name: 'Casamento diego betina'
   },
   {
-    date: '10 dezembro',
+    date: '10/12/2015',
     name: 'Recital paiva'
   }
 ];

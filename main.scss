@@ -3,5 +3,9 @@ $color-collection: ('#01579B', '#0277BD', '#0288D1', '#039BE5', '#03A9F4', '#29B
 @for $i from 0 to length($color-collection) {
     li:nth-child(#{$i}) {
         background: unquote(nth($color-collection, $i+1));
+
+        &.old {
+        	background: #f4f4f4;
+        }
     }
 }

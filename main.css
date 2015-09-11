@@ -1,28 +1,46 @@
 li:nth-child(0) {
   background: #01579B; }
+  li:nth-child(0).old {
+    background: #f4f4f4; }
 
 li:nth-child(1) {
   background: #0277BD; }
+  li:nth-child(1).old {
+    background: #f4f4f4; }
 
 li:nth-child(2) {
   background: #0288D1; }
+  li:nth-child(2).old {
+    background: #f4f4f4; }
 
 li:nth-child(3) {
   background: #039BE5; }
+  li:nth-child(3).old {
+    background: #f4f4f4; }
 
 li:nth-child(4) {
   background: #03A9F4; }
+  li:nth-child(4).old {
+    background: #f4f4f4; }
 
 li:nth-child(5) {
   background: #29B6F6; }
+  li:nth-child(5).old {
+    background: #f4f4f4; }
 
 li:nth-child(6) {
   background: #4FC3F7; }
+  li:nth-child(6).old {
+    background: #f4f4f4; }
 
 li:nth-child(7) {
   background: #81D4FA; }
+  li:nth-child(7).old {
+    background: #f4f4f4; }
 
 li:nth-child(8) {
   background: #B3E5FC; }
+  li:nth-child(8).old {
+    background: #f4f4f4; }
 
 /*# sourceMappingURL=main.css.map */

@@ -16,6 +16,10 @@ var data =  [
     name: 'UX conf br'
   },
   {
+    date: '09/26/2015',
+    name: 'TDC'
+  },
+  {
     date: '11/11/2015',
     name: 'Pearl Jam'
   },
@@ -26,6 +30,10 @@ var data =  [
   {
     date: '12/10/2015',
     name: 'Recital paiva'
+  },
+  {
+    date: '12/16/2015',
+    name: 'Show David Gilmour'
   }
 ];
 
